@@ -14,7 +14,7 @@
 * Inicializaremos el typescript desde el terminal. `tsc --init`
     * Si falla podemos usar `npx tsc --init`
 
-Esto creará un archivo json donde tendremos que hacer algunas configuraciones:
+Esto creará un archivo tsconfig.json donde tendremos que hacer algunas configuraciones:
     * l14: `"target": "ES6"`
     * l29: `"rootDir": "./src"`
     * l58: `"outDir": "./js"`
