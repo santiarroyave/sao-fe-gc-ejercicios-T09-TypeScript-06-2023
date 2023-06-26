@@ -2,7 +2,7 @@
 // si no vamos a instanciar nada usamos clase abstracta (esto lo veremos mas adelante igual que las interfaces)
 
 // la clase se tiene que llamar igual que el archivo
-class Persona {
+class VCPersona {
     //1- Todas todas las clases tendrán atributos
     public nombre: string; // se puede inicializar desde aqui pero no nos interesa (nombre: string = "Santi";)
     private edad: number; // ponemos private para que no se pueda acceder desde fuera
@@ -29,8 +29,8 @@ class Persona {
 }
 
 //Instancias de la clase Persona
-let per1 = new Persona("santi", 24, "TS");
+let per1 = new VCPersona("santi", 24, "TS");
 per1.setCurso("PY");
 
-let per2 = new Persona("Diana", 18, "JS");
+let per2 = new VCPersona("Diana", 18, "JS");
 per2.nombre = "David"; // podemos entrar a modificar el valor del objeto porque está publico
