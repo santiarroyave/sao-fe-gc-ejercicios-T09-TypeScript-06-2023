@@ -4,7 +4,7 @@
 ### Instalación
 1. [Instala nodeJS 18.16.1](https://nodejs.org/en)
 2. Comprobar si se ha instalado. `node --version`
-3. Instalar typescript con [npm](https://www.npmjs.com/package/typescript). `npm i -g typescript`
+3. Instalar typescript en el proyecto con [npm](https://www.npmjs.com/package/typescript). `npm i -g typescript`
 
 ### Pasos de preparación typescript
 * Crearemos una carpeta en el proyecto donde se alojará el javascript. `./js`
@@ -12,10 +12,12 @@
 * Abriremos el terminal en Code. `Ctrl + Ñ`
 
 * Inicializaremos el typescript desde el terminal. `tsc --init`
+    * Si falla podemos usar `npx tsc --init`
+
 Esto creará un archivo json donde tendremos que hacer algunas configuraciones:
-..* l14: `"target": "ES6"`
-..* l29: `"rootDir": "./src"`
-..* l58: `"outDir": "./js"`
+    * l14: `"target": "ES6"`
+    * l29: `"rootDir": "./src"`
+    * l58: `"outDir": "./js"`
 
 ### Otros comandos en terminal
 * Compilar typescript. `tsc`
