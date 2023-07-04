@@ -39,6 +39,7 @@ class Electrodomestico{
         return this.peso;
     }
 
+    // comprobarConsumoEnergetico(char letra): comprueba que la letra es correcta, sino es correcta usara la letra por defecto. Se invocara al crear el objeto y no será visible.
     comprobarConsumoEnergetico(letra: string){
         switch (letra){
             case "A":
@@ -60,6 +61,76 @@ class Electrodomestico{
                 return defConsumo;
                 break;
         }
+    }
+
+    // comprobarColor(String color): comprueba que el color es correcto, sino lo es usa el color por defecto. Se invocara al crear el objeto y no será visible.
+    comprobarColor(color: string){
+        switch (color) {
+            case "blanco":
+                return "blanco";
+                break;
+            case "negro":
+                return "negro";
+                break;
+            case "rojo":
+                return "rojo";
+                break;
+            case "azul":
+                return "azul";
+                break;
+            case "blanco":
+                return "blanco";
+                break;
+            case "gris":
+                return "gris";
+                break;
+        
+            default:
+                return defColor;
+                break;
+        }
+    }
+
+    // precioFinal(): según el consumo energético, aumentara su precio, y según su tamaño, también
+    precioFinal(){
+
+        // aumentando precio segun consumo
+        switch (this.consumo){
+            case "A":
+                this.precioBase += 100;
+                break;
+            case "B":
+                this.precioBase += 80;
+                break;
+            case "C":
+                this.precioBase += 60;
+                break;
+            case "D":
+                this.precioBase += 50;
+                break;
+            case "E":
+                this.precioBase += 30;
+                break;
+            case "F":
+                this.precioBase += 10;
+                break;
+        }
+
+        // aumentando precio segun tamaño
+        if( 0 < this.peso && this.peso <= 19){
+            this.precioBase += 20;
+        }
+        if( 20 < this.peso && this.peso <= 49){
+            this.precioBase += 50;
+        }
+        if( 50 < this.peso && this.peso <= 79){
+            this.precioBase += 80;
+        }
+        if( 80 < this.peso){
+            this.precioBase += 100;
+        }
+
+        // console.log(`Precio base electrodomestico: ${this.precioBase} €`);
     }
 }
 
