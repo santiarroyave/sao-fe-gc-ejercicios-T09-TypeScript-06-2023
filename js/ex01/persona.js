@@ -1,14 +1,19 @@
 "use strict";
-const defSexo = "H";
+// Valores por defecto
+let defNombre = "";
+let defEdad = 0;
+let defSexo = "H";
+let defPeso = 0;
+let defAltura = 0;
 class Persona {
     // Constructores
     constructor(newDni) {
-        this.nombre = "";
-        this.edad = 0;
+        this.nombre = defNombre;
+        this.edad = defEdad;
         this.dni = newDni;
         this.sexo = defSexo;
-        this.peso = 0;
-        this.altura = 0;
+        this.peso = defPeso;
+        this.altura = defAltura;
     }
     // Métodos própios
     getDni() {
