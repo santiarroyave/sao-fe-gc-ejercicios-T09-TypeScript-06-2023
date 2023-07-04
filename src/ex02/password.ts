@@ -9,8 +9,6 @@ class Password{
     constructor(){
         this.longitud = defLongitud;
         this.contraseña = this.contraseñaAleatoria();
-
-
     }
 
     // Métodos
@@ -21,8 +19,6 @@ class Password{
             valor = valor * 10 + Math.floor(Math.random()*10);
             i++;
         }
-        
-
         return valor;
     }
 
