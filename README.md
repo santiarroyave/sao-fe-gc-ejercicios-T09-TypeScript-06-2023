@@ -85,3 +85,5 @@ Ahora crea una clase mainApp que realice lo siguiente:
 * Asigna a cada posición un objeto de las clases anteriores con los valores que desees.
 * Ahora, recorre este array y ejecuta el método precioFinal().
 * Deberás mostrar el precio de cada clase, es decir, el precio de todas las televisiones por un lado, el de las lavadoras por otro y la suma de los Electrodomésticos (puedes crear objetos Electrodoméstico, pero recuerda que Televisión y Lavadora también son electrodomésticos). Por ejemplo, si tenemos un Electrodoméstico con un precio final de 300, una lavadora de 200 y una televisión de 500, el resultado final será de 1000 (300+200+500) para electrodomésticos, 200 para lavadora y 500 para televisión.
+
+![imagen](https://github.com/santiarroyave/sao-fe-gc-ejercicios-T09-TypeScript-06-2023/assets/135848692/e7630ed2-41fb-4b1b-9060-35fd65574160)
